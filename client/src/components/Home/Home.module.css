@@ -1,0 +1,60 @@
+.home {
+  position: relative;
+  background-color: #ffe6eb; /* Light pink background */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 2rem;
+  color: #1b2a4e;
+}
+
+.content p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.buttons {
+  margin-top: 1rem;
+}
+
+.primaryButton {
+  background-color: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.note {
+  font-style: italic;
+  margin-top: 10px;
+  color: #444;
+}
+
+.imageContainer {
+  max-width: 45%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.salonImage {
+  width:100%;
+  max-width: 468px;
+  border-radius: 10px;
+}
