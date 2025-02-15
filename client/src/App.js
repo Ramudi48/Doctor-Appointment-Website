@@ -9,6 +9,7 @@ import CustomerRegister from './components/Customers/CustomerRegister';
 import AdminDashboard from './components/Admin/AdminDashboard';
 import styles from './App.module.css';
 
+
 function App() {
   return (
     <Router>
