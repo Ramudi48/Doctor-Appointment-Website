@@ -5,6 +5,7 @@
   background-color: #ffe6eb; /* Light pink background */
   height: 100vh;
   padding: 2rem;
+  flex-wrap: wrap;
 }
 
 .content {
@@ -19,10 +20,13 @@ h2 {
 p {
   font-size: 1.2rem;
   color: #333;
+  line-height: 1.6;
 }
 
 .buttons {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 15px; /* Adds spacing between buttons */
 }
 
 .primaryButton {
@@ -34,7 +38,13 @@ p {
   margin-right: 10px;
   border-radius: 5px;
   cursor: pointer;
+  transition: background 0.3s ease-in-out;
 }
+
+.primaryButton:hover {
+  background-color: #e63950;
+}
+
 
 .secondaryButton {
   background-color: #1b2a4e;
@@ -44,6 +54,11 @@ p {
   font-size: 1rem;
   border-radius: 5px;
   cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.secondaryButton:hover {
+  background-color: #16213e;
 }
 
 .note {
@@ -62,4 +77,6 @@ p {
   width: 100%;
   max-width: 500px;
   border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
