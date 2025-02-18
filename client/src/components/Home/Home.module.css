@@ -1,25 +1,22 @@
 .home {
-  position: relative;
-  background-color: #ffe6eb; /* Light pink background */
-  height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-
-.overlay {
-  background-color: rgba(255, 255, 255, 0.6);
+  justify-content: space-between;
+  background-color: #ffe6eb; /* Light pink background */
+  height: 100vh;
   padding: 2rem;
-  border-radius: 10px;
-  text-align: center;
 }
 
-.content h2 {
-  font-size: 2rem;
+.content {
+  max-width: 50%;
+}
+
+h2 {
+  font-size: 2.5rem;
   color: #1b2a4e;
 }
 
-.content p {
+p {
   font-size: 1.2rem;
   color: #333;
 }
@@ -32,14 +29,22 @@
   background-color: #ff4d6d;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 24px;
   font-size: 1rem;
   margin-right: 10px;
   border-radius: 5px;
   cursor: pointer;
 }
 
-
+.secondaryButton {
+  background-color: #1b2a4e;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 .note {
   font-style: italic;
@@ -54,7 +59,7 @@
 }
 
 .salonImage {
-  width:100%;
-  max-width: 468px;
+  width: 100%;
+  max-width: 500px;
   border-radius: 10px;
 }
