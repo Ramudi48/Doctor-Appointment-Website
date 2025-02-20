@@ -1,18 +1,19 @@
-.adminDashboard {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .adminDashboard h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .adminDashboard p {
-    text-align: center;
-    color: #555;
-  }
+.admin-container {
+  text-align: center;
+  padding: 50px;
+  background: #fff;
+}
+
+.stats {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.card {
+  padding: 15px;
+  background: #ff4081;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+}
