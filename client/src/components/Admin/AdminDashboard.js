@@ -1,3 +1,19 @@
+/*import React from 'react';
+import styles from './AdminDashboard.module.css';
+
+const AdminDashboard = () => {
+  return (
+    <div className={styles.adminDashboard}>
+      <h2>Admin Dashboard</h2>
+      <p>Manage appointments, staff, and services here.</p>
+    </div>
+  );
+};
+export default AdminDashboard;*/
+
+
+
+
 import React, { useState, useEffect } from "react";
 /*import axios from "axios";*/
 
@@ -7,10 +23,10 @@ const Admin = () => {
   const [appointments, setAppointments] = useState([]);
 
   /*useEffect(() => {
-    axios.get("http://localhost:3000/appointments")
+    axios.get("http://localhost:5000/appointments")
       .then(response => setAppointments(response.data))
       .catch(error => console.log(error));
-  }, []); */
+  }, []);  */
 
   return (
     <div className="admin-container">
