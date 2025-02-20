@@ -1,82 +1,47 @@
-.home {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #ffe6eb; /* Light pink background */
-  height: 100vh;
-  padding: 2rem;
-  flex-wrap: wrap;
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fdf4f8;
 }
 
-.content {
-  max-width: 50%;
+.home-container {
+  text-align: center;
+  padding: 50px;
 }
 
-h2 {
-  font-size: 2.5rem;
-  color: #1b2a4e;
-}
-
-p {
-  font-size: 1.2rem;
+.header h1 {
+  font-size: 36px;
   color: #333;
-  line-height: 1.6;
 }
 
-.buttons {
-  margin-top: 1.5rem;
-  display: flex;
-  gap: 15px; /* Adds spacing between buttons */
-}
-
-.primaryButton {
-  background-color: #ff4d6d;
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
   color: white;
-  border: none;
-  padding: 12px 24px;
-  font-size: 1rem;
-  margin-right: 10px;
+  background: #ff4081;
   border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease-in-out;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-.primaryButton:hover {
-  background-color: #e63950;
+.btn:hover {
+  background: #e91e63;
 }
 
-
-.secondaryButton {
-  background-color: #1b2a4e;
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease-in-out;
-}
-
-.secondaryButton:hover {
-  background-color: #16213e;
-}
-
-.note {
-  font-style: italic;
-  margin-top: 10px;
-  color: #444;
-}
-
-.imageContainer {
-  max-width: 45%;
+.gallery-grid {
   display: flex;
-  justify-content: flex-end;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.salonImage {
-  width: 100%;
-  max-width: 500px;
+.hours {
+  margin-top: 30px;
+  padding: 20px;
+  background: white;
   border-radius: 10px;
-  object-fit: cover;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  display: inline-block;
 }
+

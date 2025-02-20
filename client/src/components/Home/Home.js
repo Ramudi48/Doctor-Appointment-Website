@@ -1,33 +1,36 @@
 import React from "react";
-import styles from "./Home.module.css";
-
+import { Link } from "react-router-dom";
+import "./Home.module.css";
 
 const Home = () => {
   return (
-    <div className={styles.home}>
-      <div className={styles.overlay}>
-        <div className={styles.content}>
-          <h2>It's your time to<br /><strong> shine</strong></h2>
-          <p>Welcome to Salon Beauty <br />  Your ultimate destination for beauty<br /> and self-care! Our salon
-             offers a range of professional services,<br /> including hair styling, skincare, manicures, 
-             pedicures, and more. With a<br /> team of skilled experts and a relaxing atmosphere, we are 
-             committed to enhancing your beauty <br />and confidence. Book an appointment today and 
-             experience the perfect blend of luxury and care!</p>
-          <div className={styles.buttons}>
-            <button className={styles.primaryButton}>About us</button>  
-          </div>
-        </div>
-      </div>
-      <div className={styles.imageContainer}>
-      <img src="/images/image5.jpeg" alt="Salon Model" className={styles.salonImage} />
+    <div className="home-container">
+      <header className="header">
+        <h1>Beauty Booking Website</h1>
+        <Link to="/book" className="btn">Book Now</Link>
+      </header>
 
-      </div>
+      {/* Gallery */}
+      <section className="gallery">
+        <h2>Gallery</h2>
+        <div className="gallery-grid">
+          <img src="images/image8.jpeg" alt="Salon 1" />
+          <img src="images/image9.jpeg" alt="Salon 2" />
+          <img src="images/image10.jpeg" alt="Salon 3" />
+        </div>
+      </section>
+
+      {/* Opening Hours */}
+      <section className="hours">
+        <h2>Opening Hours</h2>
+        <ul>
+          <li>Mon-Fri: 10 AM - 5 PM</li>
+          <li>Sat: 10 AM - 3 PM</li>
+          <li>Sun: Closed</li>
+        </ul>
+      </section>
     </div>
   );
 };
 
 export default Home;
-
-
-
-
