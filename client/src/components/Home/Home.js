@@ -7,9 +7,10 @@ const Home = () => {
       {/* Hero Section */}
       <header className={styles.hero}>
         <div className={styles.overlay}>
-          <h1>Indulge in Luxury & Beauty</h1>
-          <p className={styles.subtitle}>Book your beauty session with top professionals</p>
-          <Link to="/book" className={styles.btn}>Book Now</Link>
+          <img src="images/image16.jpeg" alt="Salon" className={styles.heroImg} />
+          <h1 className={styles.title}>Best Place for Naturals <span>SPA</span> Treatment</h1>
+          <p className={styles.subtitle}>Experience luxury and relaxation at the finest beauty salon.</p>
+          <Link to="/book" className={styles.btn}>Get an Appointment</Link>
         </div>
       </header>
 
