@@ -1,32 +1,35 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import "./Home.module.css";
+import styles from "./Home.module.css";
 
 const Home = () => {
   return (
-    <div className="home-container">
-      <header className="header">
-        <h1>Beauty Booking Website</h1>
-        <Link to="/book" className="btn">Book Now</Link>
+    <div className={styles.homeContainer}>
+      {/* Hero Section */}
+      <header className={styles.hero}>
+        <div className={styles.overlay}>
+          <h1>Indulge in Luxury & Beauty</h1>
+          <p className={styles.subtitle}>Book your beauty session with top professionals</p>
+          <Link to="/book" className={styles.btn}>Book Now</Link>
+        </div>
       </header>
 
-      {/* Gallery */}
-      <section className="gallery">
-        <h2>Gallery</h2>
-        <div className="gallery-grid">
-          <img src="images/image8.jpeg" alt="Salon 1" />
-          <img src="images/image9.jpeg" alt="Salon 2" />
-          <img src="images/image10.jpeg" alt="Salon 3" />
+      {/* Gallery Section */}
+      <section className={styles.gallery}>
+        <h2>Our Salon Experience</h2>
+        <div className={styles.galleryGrid}>
+          <img src="images/image8.jpeg" alt="Salon 1" className={styles.galleryImg} />
+          <img src="images/image9.jpeg" alt="Salon 2" className={styles.galleryImg} />
+          <img src="images/image10.jpeg" alt="Salon 3" className={styles.galleryImg} />
         </div>
       </section>
 
-      {/* Opening Hours */}
-      <section className="hours">
+      {/* Opening Hours Section */}
+      <section className={styles.hours}>
         <h2>Opening Hours</h2>
         <ul>
-          <li>Mon-Fri: 10 AM - 5 PM</li>
-          <li>Sat: 10 AM - 3 PM</li>
-          <li>Sun: Closed</li>
+          <li><span>Monday - Friday:</span> 10:00 AM - 5:00 PM</li>
+          <li><span>Saturday:</span> 10:00 AM - 3:00 PM</li>
+          <li><span>Sunday:</span> Closed</li>
         </ul>
       </section>
     </div>
@@ -34,3 +37,4 @@ const Home = () => {
 };
 
 export default Home;
+

@@ -1,47 +1,147 @@
+/* Global Styles */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   background: #fdf4f8;
-}
-
-.home-container {
-  text-align: center;
-  padding: 50px;
-}
-
-.header h1 {
-  font-size: 36px;
   color: #333;
 }
 
+/* Home Container */
+.homeContainer {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* Hero Section */
+.hero {
+  
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
 .btn {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 12px 30px;
   font-size: 18px;
+  font-weight: bold;
   color: white;
-  background: #ff4081;
-  border-radius: 5px;
+  background: linear-gradient(45deg, #ff4081, #e91e63);
+  border-radius: 30px;
   text-decoration: none;
-  transition: 0.3s;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover {
-  background: #e91e63;
+  background: linear-gradient(45deg, #e91e63, #ff1744);
+  transform: scale(1.1);
 }
 
-.gallery-grid {
+/* Gallery */
+.gallery {
+  margin-top: 60px;
+}
+
+.gallery h2 {
+  font-size: 28px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.galleryGrid {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   justify-content: center;
   margin-top: 20px;
 }
 
-.hours {
-  margin-top: 30px;
-  padding: 20px;
-  background: white;
-  border-radius: 10px;
-  display: inline-block;
+.galleryImg {
+  width: 280px;
+  height: 200px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
 }
 
+.galleryImg:hover {
+  transform: scale(1.1);
+}
+
+/* Opening Hours */
+.hours {
+  margin-top: 60px;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  display: inline-block;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.hours:hover {
+  transform: scale(1.02);
+}
+
+.hours h2 {
+  font-size: 28px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.hours ul {
+  list-style: none;
+  padding: 0;
+}
+
+.hours li {
+  font-size: 18px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.hours li span {
+  font-weight: bold;
+  color: #e91e63;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .galleryGrid {
+    flex-direction: column;
+  }
+
+  .galleryImg {
+    width: 90%;
+    height: auto;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
