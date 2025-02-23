@@ -4,11 +4,12 @@ import styles from "./Home.module.css";
 const Home = () => {
   return (
     <div className={styles.homeContainer}>
+      <img src="images/image17.jpeg" alt="Salon" className={styles.homeContainerImage} />
       {/* Hero Section */}
       <header className={styles.hero}>
         <div className={styles.overlay}>
-          <img src="images/image16.jpeg" alt="Salon" className={styles.heroImg} />
-          <h1 className={styles.title}>Best Place for Naturals <span>SPA</span> Treatment</h1>
+          
+          <h1 className={styles.title}>Indulge in Luxury & Beauty</h1>
           <p className={styles.subtitle}>Experience luxury and relaxation at the finest beauty salon.</p>
           <Link to="/book" className={styles.btn}>Get an Appointment</Link>
         </div>

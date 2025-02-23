@@ -8,9 +8,22 @@ body {
 }
 
 /* Home Container */
-.homeContainer {
-  text-align: center;
-  padding: 50px 20px;
+.homeContainerImage {
+  width: 100%;
+  padding: 2%;
+  
+  .home-container {
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; 
+    color: white; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    
+}
+
 }
 
 /* Hero Section */
@@ -22,17 +35,26 @@ body {
   justify-content: center;
   position: relative;
   background-size: cover;
-  
-  text-align: center;
-  
+  text-align: center;  
 }
 
 .overlay {
   background: rgba(0, 0, 0, 0.5);
-  
-  padding: 50px;
+  width : 100%;
+  padding: 10px;
   border-radius: 10px;
 }
+/*.heroImg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  padding: 1px;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  border-radius: 10px;
+}*/
 
 .hero h1 {
   font-size: 42px;
@@ -105,6 +127,7 @@ body {
   display: inline-block;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
+  text-align: center;
 }
 
 .hours:hover {
@@ -115,6 +138,7 @@ body {
   font-size: 28px;
   color: #444;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .hours ul {
