@@ -23,7 +23,18 @@ function Home() {
                 Book Now
               </Link>
             </div>
-            
+            <div className="p-4 border rounded-lg">
+              <h3 className="text-xl font-semibold mb-2">Specialist Consultation</h3>
+              <p className="text-gray-600 mb-4">
+                Connect with our specialists for specific medical conditions and expert medical advice.
+              </p>
+              <Link
+                to="/book"
+                className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+              >
+                Book Now
+              </Link>
+            </div>
           </div>
         </div>
 
