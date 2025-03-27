@@ -9,7 +9,13 @@ function Appointments() {
       time: "10:00 AM",
       type: "General Consultation"
     },
-   
+    {
+      id: 2,
+      doctor: "Dr. Michael Chen",
+      date: "2024-03-25",
+      time: "2:30 PM",
+      type: "Specialist Consultation"
+    }
   ]);
 
   return (
