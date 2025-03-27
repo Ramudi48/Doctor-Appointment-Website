@@ -31,7 +31,7 @@ function Appointments() {
               <div>
                 <h3 className="text-xl font-semibold">{appointment.doctor}</h3>
                 <p className="text-gray-600">{appointment.type}</p>
-                
+                <p className="text-gray-600">
                   {appointment.date} at {appointment.time}
                 </p>
               </div>
