@@ -7,7 +7,7 @@ function Appointments() {
       doctor: "Dr. Sarah Johnson",
       date: "2024-03-20",
       time: "10:00 AM",
-      
+      type: "General Consultation"
     },
     {
       id: 2,
