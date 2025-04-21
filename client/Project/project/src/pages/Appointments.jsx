@@ -40,6 +40,7 @@ function Appointments() {
               >
                 Cancel
               </button>
+              
             </div>
           </div>
         ))}
