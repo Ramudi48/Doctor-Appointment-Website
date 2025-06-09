@@ -43,7 +43,7 @@ function BookAppointment() {
             <option value="dr-johnson">Dr. Sarah Johnson</option>
             <option value="dr-chen">Dr. Michael Chen</option>
             <option value="dr-patel">Dr. Priya Patel</option>
-          </select>n
+          </select>
         </div>
 
         <div className="mb-4">
