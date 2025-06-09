@@ -30,7 +30,7 @@ function BookAppointment() {
       <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-md p-6">
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2">
-            Doctor
+            Doctor 
           </label>
           <select
             name="doctor"
@@ -43,7 +43,7 @@ function BookAppointment() {
             <option value="dr-johnson">Dr. Sarah Johnson</option>
             <option value="dr-chen">Dr. Michael Chen</option>
             <option value="dr-patel">Dr. Priya Patel</option>
-          </select>
+          </select>n
         </div>
 
         <div className="mb-4">
